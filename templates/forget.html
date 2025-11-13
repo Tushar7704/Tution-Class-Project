@@ -1,0 +1,131 @@
+{% extends "base.html" %}
+
+{% block python %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forget password</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+
+    
+    .Forget-container {
+        text-align: center;
+        
+        width: 350px;
+        padding: 20px;
+        margin-left:35%;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+        color: #FF6600;
+    }
+    
+    .Forget-form {
+        margin-top: 10px;
+    }
+    
+    .icon {
+        font-size: 50px;
+        color: #FF6600;
+        margin-bottom: 10px;
+    }
+    
+    h3 {
+        font-size: 18px;
+        color: #666;
+        margin-bottom: 20px;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    .options {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 0;
+        font-size: 14px;
+        color: #666;
+    }
+    
+    button {
+        padding: 10px;
+        background:rgb(142, 98, 69);
+        
+        color:;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    
+    button:hover {
+        background: #FF6600;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #FF6600;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+    
+    
+</style>
+<body>
+    <div class="Forget-container">
+        <h2>FORGET PASSWORD </h2>
+        <div class="Forget-form">
+            <div class="icon">
+                <span>👤</span>
+            </div>
+            <form id="forget form">
+                <input type="text" id="Username" placeholder="Username" required>
+                <input type="password" id="New password" placeholder="New Password" required>
+                <input type="password" id="Re-Enter password" placeholder="Re-Enter Password" required>
+                <input type="password" id="Mobile No" placeholder="Mobile No" required>
+                <input type="password" id="Enter OTP" placeholder="Enter OTP" required>
+                
+                <div class="options">
+                    <label>
+                        <input type="checkbox" id="rememberMe"> Remember Me
+                    </label>
+                    
+                </div>
+                <button type="submit">Confirm</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+{% endblock %}

@@ -1,0 +1,539 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>IT CLASSES</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="/static/img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="/static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="/static/css/main.css" rel="stylesheet">
+
+</head>
+<style>
+    .userlogin h4{
+        color: #FF6600;
+        margin-left: 63px;
+    }
+</style>
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid d-none d-lg-block">
+        <div class="row align-items-center py-4 px-xl-5">
+            <div class="col-lg-3">
+                <a href="#" class="text-decoration-none">
+                    <h1 class="m-0"><span class="text-primary">IT</span>CLASSES</h1>
+                </a>
+            </div>
+            <div class="col-lg-3 text-right">
+                <div class="d-inline-flex align-items-center">
+                    <i class="fa fa-2x fa-map-marker-alt text-primary mr-3"></i>
+                    <div class="text-left">
+                        <h6 class="font-weight-semi-bold mb-1">Our Office</h6>
+                        <small>BAPA SITARAM COMPLEX,BHAVNAGAR</small>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-lg-3 text-right">
+                <div class="d-inline-flex align-items-center">
+                    <i class="fa fa-2x fa-envelope text-primary mr-3"></i>
+                    <div class="text-left">
+                        <h6 class="font-weight-semi-bold mb-1">Email Us</h6>
+                        <small>itclasses19@gmail.com</small>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 text-right">
+                <div class="d-inline-flex align-items-center">
+                    <i class="fa fa-2x fa-phone text-primary mr-3"></i>
+                    <div class="text-left">
+                        <h6 class="font-weight-semi-bold mb-1">Call Us</h6>
+                        <small>+91 78741 76198</small><br />
+                        <small>+91 93165 81240</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="userlogin"><h4>welcome prashant{% if messages %} {% for msg in messages %} {{msg}} {% endfor %} {% endif %}</h1></div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid">
+        <div class="row border-top px-xl-5">
+            <div class="col-lg-9">
+                <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
+                    <a href="" class="text-decoration-none d-block d-lg-none">
+                        <h1 class="m-0"><span class="text-primary">IT</span>CLASSES</h1>
+                    </a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav py-0">
+                            <a href="/" class="nav-item nav-link active">Home</a>
+                            <a href="/About/" class="nav-item nav-link">About</a>
+                            <a href="/Course/" class="nav-item nav-link">Course</a>
+                            <a href="/Teacher/" class="nav-item nav-link">Teachers</a>
+                            <a href="/Facility/" class="nav-item nav-link">Facility</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Download</a>
+                                <div class="dropdown-menu rounded-0 m-0">
+                                    <a href="/Materials/" class="dropdown-item">Materials</a>
+                                    <a href="/Assignment/" class="dropdown-item">Assignment</a>
+                                </div>
+                            </div>
+                            <a href="/Contact/" class="nav-item nav-link">Contact</a>
+                        </div>
+                        <a class="btn btn-primary py-2 px-4 d-none d-lg-block admission-00"
+                            href="/admission/">Admission</a>
+                        <a class="btn btn-primary py-2 px-4 d-none d-lg-block login-00-00" href="/Login/">LogIn</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 pb-5 mb-5">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#header-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#header-carousel" data-slide-to="1"></li>
+                <li data-target="#header-carousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="min-height: 300px;">
+                    <img class="position-relative w-100" src="/static/img/carousel-1.jpg"
+                        style="min-height: 300px; object-fit: cover;">
+                    <div class="carousel-caption d-flex align-items-center justify-content-center">
+                        <div class="p-5" style="width: 100%; max-width: 900px;">
+                            <h5 class="text-white text-uppercase mb-md-3">Best Online Courses</h5>
+                            <h1 class="display-3 text-white mb-md-4">Best Education From Your Home</h1>
+                            <a href="/Learn/" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">Learn
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="min-height: 300px;">
+                    <img class="position-relative w-100" src="/static/img/carousel-2.jpg"
+                        style="min-height: 300px; object-fit: cover;">
+                    <div class="carousel-caption d-flex align-items-center justify-content-center">
+                        <div class="p-5" style="width: 100%; max-width: 900px;">
+                            <h5 class="text-white text-uppercase mb-md-3">Best Online Courses</h5>
+                            <h1 class="display-3 text-white mb-md-4">Best Online Learning Platform</h1>
+                            <a href="/Learn/" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">Learn
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="min-height: 300px;">
+                    <img class="position-relative w-100" src="/static/img/carousel-3.jpg"
+                        style="min-height: 300px; object-fit: cover;">
+                    <div class="carousel-caption d-flex align-items-center justify-content-center">
+                        <div class="p-5" style="width: 100%; max-width: 900px;">
+                            <h5 class="text-white text-uppercase mb-md-3">Best Online Courses</h5>
+                            <h1 class="display-3 text-white mb-md-4">New Way To Learn From Home</h1>
+                            <a href="/Learn/" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">Learn
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <img class="img-fluid rounded mb-4 mb-lg-0" src="/static/img/course-4.jpg" alt="">
+                </div>
+                <div class="col-lg-7">
+                    <div class="text-left mb-4">
+                        <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">About Us</h5>
+                        <h1>Innovative Way To Learn</h1>
+                    </div>
+                    <p align="justify">A programming language is a formal set of instructions used to communicate with
+                        computers and create software, applications, or systems. It provides a structured way to write
+                        code that computers can understand and execute.
+                    <p align="justify">A programming language website is an official or community-supported website
+                        dedicated to a specific programming language.</p>
+                    </p>
+                    <a href="/About/" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Category Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <div class="text-center mb-5">
+                <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Course</h5>
+                <h1>Popular Course</h1>
+            </div>
+            <div class="row">
+                {% for n in  courseimgData %}
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="{{ n.cimg }}" alt="">
+                        <a class="cat-overlay text-white text-decoration-none">
+                            <h4 class="text-white font-weight-medium">{{ n.cname }}</h4>
+                        </a>
+                    </div>
+                </div>
+                {% endfor %}
+                <!-- <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="/static/img/python.avif" alt="">
+                        <a class="cat-overlay text-white text-decoration-none">
+                            <h4 class="text-white font-weight-medium">Python</h4>
+                        </a>
+                    </div>
+                </div> -->
+                <!-- <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="/static/img/java.avif" alt="">
+                        <a class="cat-overlay text-white text-decoration-none">
+                            <h4 class="text-white font-weight-medium">Java</h4>
+                        </a>
+                    </div>
+                </div> -->
+                <!-- <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="/static/img/rust.jpg" alt="">
+                        <a class="cat-overlay text-white text-decoration-none">
+                            <h4 class="text-white font-weight-medium">Rust</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="/static/img/ruby 4.jpg" alt="">
+                        <a class="cat-overlay text-white text-decoration-none">
+                            <h4 class="text-white font-weight-medium">Ruby</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="/static/img/swift 2.jpeg" alt="">
+                        <a class="cat-overlay text-white text-decoration-none">
+                            <h4 class="text-white font-weight-medium">Swift</h4>
+                        </a>
+                    </div> -->
+                <!-- </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="/static/img/html 1.jpeg" alt="">
+                        <a class="cat-overlay text-white text-decoration-none">
+                            <h4 class="text-white font-weight-medium">Html</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="/static/img/php 2.jpeg" alt="">
+                        <a class="cat-overlay text-white text-decoration-none">
+                            <h4 class="text-white font-weight-medium">Php</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="/static/img/react.jpeg" alt="">
+                        <a class="cat-overlay text-white text-decoration-none">
+                            <h4 class="text-white font-weight-medium">React Native</h4>
+                        </a>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- Category Start -->
+
+
+    <!-- Courses Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Placement</h5>
+                <h1>Our Students</h1>
+            </div>
+            <div class="row">
+                {% for n in  placementData %}
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="rounded overflow-hidden mb-2">
+                        <img class="img-fluid" src="{{ n.stdimg }}" alt="">
+                        <div class="bg-secondary p-4">
+                            <div class="d-flex justify-content-between mb-3">
+
+                            </div>
+                            <h3 class="h5">{{ n.stdname }}</h3>
+                            <h3 class="h5">{{ n.stdcourse }}</h3>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>{{ n.stdlpa }}</h6>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+
+                <!-- <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="rounded overflow-hidden mb-2">
+                        <img class="img-fluid" src="/static/img/student 4.avif" alt="">
+                        <div class="bg-secondary p-4">
+                            <div class="d-flex justify-content-between mb-3">
+
+                            </div>
+                            <h3 class="h5">Pankaj Sharma</h3>
+                            <h3 class="h5">Python</h3>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4 LPA</h6>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="rounded overflow-hidden mb-2">
+                        <img class="img-fluid" src="/static/img/student 1.avif" alt="">
+                        <div class="bg-secondary p-4">
+                            <div class="d-flex justify-content-between mb-3">
+
+                            </div>
+                            <h3 class="h5">Urvashi Modi</h3>
+                            <h3 class="h5">Rust</h3>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 LPA</h6>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="rounded overflow-hidden mb-2">
+                        <img class="img-fluid" src="/static/img/student 2.jpg" alt="">
+                        <div class="bg-secondary p-4">
+                            <div class="d-flex justify-content-between mb-3">
+
+                            </div>
+                            <h3 class="h5">Jay Shah</h3>
+                            <h3 class="h5">Ruby</h3>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>7 LPA</h6>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- Courses End -->
+    <!-- Team Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <div class="text-center mb-5">
+                <h3 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">GALLERY</h3>
+
+            </div>
+            <div class="row">
+                {% for n in gallery %}
+                <div class="col-md-6 col-lg-3 text-center team mb-4">
+                    <div class="team-item rounded overflow-hidden mb-2">
+                        <div class="team-img position-relative">
+                            <img class="img-fluid" src="{{n.gimg}}" alt="">
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Testimonial</h5>
+                <h1>What Say Our Students</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="text-center">
+                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                            <h4 class="font-weight-normal mb-4">"Group discussions and teamwork made learning more
+                                engaging."
+                                "The instructor’s enthusiasm kept the class lively and motivated."</h4>
+                            <img class="img-fluid mx-auto mb-3" src="/static/img/review.jpeg" alt="">
+                            <h5 class="m-0">Harsh</h5>
+                            <span>Student</span>
+                        </div>
+                        <div class="text-center">
+                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                            <h4 class="font-weight-normal mb-4">The instructors demonstrated excellent subject knowledge
+                                and explained concepts clearly.
+                            </h4>
+                            <img class="img-fluid mx-auto mb-3" src="/static/img/team-3.jpg" alt="">
+                            <h5 class="m-0">Aayushi</h5>
+                            <span>Student</span>
+                        </div>
+                        <div class="text-center">
+                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                            <h4 class="font-weight-normal mb-4">the class was well-organized, and the materials
+                                provided, such as video tutorials and coding examples, were incredibly helpful. I now
+                                feel more confident in my IT skills and look forward to pursuing a career in this
+                                field."</h4>
+                            <img class="img-fluid mx-auto mb-3" src="/static/img/review 1.jpeg" alt="">
+                            <h5 class="m-0">Vijay</h5>
+                            <span>Student</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
+        <div class="row pt-5">
+            <div class="col-lg-7 col-md-12">
+                <div class="row">
+                    <div class="col-md-6 mb-5">
+                        <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Get In Touch</h5>
+                        <p><i class="fa fa-map-marker-alt mr-2"></i>BAPA SITARAM COMPLEX,BHAVNAGAR</p>
+                        <p><i class="fa fa-phone-alt mr-2"></i>+91 78741 76198</p>
+                        <p><i class="fa fa-envelope mr-2"></i>itclasses19@gmail.com</p>
+                        <div class="d-flex justify-content-start mt-4">
+                            <a class="btn btn-outline-light btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-square mr-2" href="#"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-square mr-2" href="#"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-light btn-square"
+                                href="https://www.instagram.com/prajapati_tushar_04?igsh=MTM5MjQ0ZjRrNThkdg=="><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-5">
+                        <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Our Link</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-white mb-2" href="/"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                            <a class="text-white mb-2" href="/About/"><i class="fa fa-angle-right mr-2"></i>About</a>
+                            <a class="text-white mb-2" href="/Course/"><i class="fa fa-angle-right mr-2"></i>Course</a>
+                            <a class="text-white mb-2" href="/Teacher/"><i
+                                    class="fa fa-angle-right mr-2"></i>Teachers</a>
+                            <a class="text-white mb-2" href="/Facility/"><i
+                                    class="fa fa-angle-right mr-2"></i>Facility</a>
+                            <a class="text-white" href="/Contact/"><i class="fa fa-angle-right mr-2"></i>Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-12 mb-5">
+                <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Newsletter</h5>
+                <p>Rebum labore lorem dolores kasd est, et ipsum amet et at kasd, ipsum sea tempor magna tempor. Accu
+                    kasd sed ea duo ipsum. Dolor duo eirmod sea justo no lorem est diam</p>
+                <div class="w-100">
+                    <div class="input-group">
+                        <input type="text" class="form-control border-light" style="padding: 30px;"
+                            placeholder="Your Email Address">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary px-4">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5"
+        style="border-color: rgba(256, 256, 256, .1) !important;">
+        <div class="row">
+            <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
+                <p class="m-0 text-white"> Copyright &copy; <a>2024 IT CLASSES</a></br>. All Rights Reserved.</br>
+                    Designed by <a>TUSHAR PRAJAPATI & PRASHANT PRAJAPATI</a>
+                </p>
+            </div>
+            <div class="col-lg-6 text-center text-md-right">
+                <ul class="nav d-inline-flex">
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">Privacy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">Terms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">Help</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/lib/easing/easing.min.js"></script>
+    <script src="/static/lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="/static/mail/jqBootstrapValidation.min.js"></script>
+    <script src="/static/mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="/static/js/main.js"></script>
+</body>
+
+</html>

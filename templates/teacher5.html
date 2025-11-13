@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+
+{% block python %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Profile</title>
+    <style>
+        .profile-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-header {
+            text-align: center;
+        }
+
+        .profile-header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #FF6600;
+        }
+
+        .profile-header h1 {
+            margin: 10px 0;
+            font-size: 24px;
+            color: #FF6600;
+        }
+
+        .profile-header p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .profile-details {
+            margin-top: 20px;
+        }
+
+        .profile-details h2 {
+            font-size: 20px;
+            color: #FF6600;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #FF6600;
+            display: inline-block;
+        }
+
+        .profile-details ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .profile-details ul li {
+            margin: 5px 0;
+        }
+
+        .contact {
+            margin-top: 20px;
+        }
+
+        .contact a {
+            color: #FF6600;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="profile-container">
+        <div class="profile-header">
+            <img src="/static/img/teacher 4.avif" alt="Teacher Profile Picture">
+            <h1>Swati Mehta</h1>
+            <p> Swift | Computer Expert | Lifelong Learner</p>
+        </div>
+
+        <div class="profile-details">
+            <h2>About Teacher</h2>
+            <p align="justify">Hello! I Am Swati Mehta, A dedicated teacher with over 08 years of experience teaching Collage in Swift.
+                My goal is to make learning engaging and accessible for all students,Help learners understand Swift’s syntax, data types, control structures, and basic programming concepts.</p>
+
+            <h2>Subjects Taught</h2>
+            <ul>
+                <li>Swift</li>
+                <li>Java Script</li>
+                <li>C++</li>
+
+            </ul>
+
+            <h2>Contact Information</h2>
+            <div class="contact">
+                <p>Email: swatimehta45@gmail.com</p>
+                <p>Phone: 9989993132</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+{% endblock %}

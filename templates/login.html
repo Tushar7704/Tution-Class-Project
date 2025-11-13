@@ -1,0 +1,142 @@
+{% extends "base.html" %}
+
+{% block python %}
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+</head> -->
+<style>
+    .login-container {
+        text-align: center;
+
+        width: 350px;
+        padding: 20px;
+        margin-left: 35%;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+        color: #FF6600;
+    }
+
+    .login-form {
+        margin-top: 10px;
+    }
+
+    .icon {
+        font-size: 50px;
+        color: #FF6600;
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        font-size: 18px;
+        color: #666;
+        margin-bottom: 20px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .options {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 0;
+        font-size: 14px;
+        color: #666;
+    }
+
+    button {
+        padding: 10px;
+        background: #FF6600;
+        color: #ffff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 10px;
+
+    }
+
+    /* button:hover {
+        background: #FF6600;
+    } */
+
+    a {
+        text-decoration: none;
+        color: #FF6600;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+    .lbtn-00{
+        background-color: #FF6600;
+    }
+</style>
+
+<body>
+        <div class="login-container">
+            {% if messages %}
+            <div class="alert-container">
+                {% for message in messages %}
+                    <div class="alert alert-danger">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+        <form method="post">
+            <h2>Login </h2>
+            <div class="login-form">
+                <div class="icon">
+                    <span>👤</span>
+                </div>
+                <h3>Have an account?</h3>
+                <a href="/registerenquiry/">Registration</a>
+                <form id="loginForm" method="post" action="">
+                    {% csrf_token %}
+                    <input type="text" id="lusername" placeholder="Username" name="lusername" required>
+                    <input type="password" id="lpassword" placeholder="Password" name="lpassword" required>
+                    <!-- <div class="options">
+                        <label>
+                            <input type="checkbox" id="rememberMe"> Remember Me
+                        </label>
+                        <a href="/Forget/">Forget Password</a>
+                    </div> -->
+
+                    <button type="submit" class="lbtn-00">Get Started</button>
+                </form>
+            </div>
+    </div>
+    
+</body>
+
+</html>
+
+
+
+
+{% endblock %}
